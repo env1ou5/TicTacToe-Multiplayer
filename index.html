@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+
+<head>
+    <meta charset = "UTF-8">
+    <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+    <link rel = "stylesheet" href = "style.css"/>
+    <script src = "/socket.io/socket.io.js"></script>
+    <script defer src = "script.js" type = "module"></script>
+    <title>TicTacToe</title>
+</head>
+
+<body>
+    <h1>Tic-Tac-Toe</h1>
+
+    <div>
+
+        <p id = "userCont">You: <span id = "user"></span> </p>
+        <p id = "oppCont">Opponent: <span id = "opp"></span> </p>
+    </div>
+
+    <br>
+
+    <p id = "PlayingAs">You are playing as <span id = "As"></span>!</p>
+
+    <br> 
+
+    <p id = "whoseTurn"> <span id = "currentTurn">X</span> 's Turn</p>
+
+    <div>
+        <p id = "enterName">Enter Your Name: </p>
+        <input type = "text" placeholder = "Name" id = "name" autocomplete = "off">
+    </div>
+
+    <button id = "find">Search for a opponent</button>
+    <img src = "loading.gif" id = "loading" alt = "">
+
+    <div id = "bigCont">
+
+        <div id = "cont"> </div>
+
+    </div>
+</body>
+
+</html>

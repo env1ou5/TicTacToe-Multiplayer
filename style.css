@@ -1,0 +1,184 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+#userCont {
+    position: absolute;
+    right: 65%
+}
+
+#oppCont {
+    position: absolute;
+    left: 65%
+}
+
+#user {
+    color : rgb(86, 159, 223);
+}
+
+#find {
+    font-size: 120%;
+    color: white;
+    cursor: pointer;
+    padding: 7px;
+    border-radius: 10px;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(0,0,0);
+}
+
+h2 {
+    color: rgb(255, 253, 129);
+    text-shadow: none;
+    text-align: center;
+    font-family: Verdana;
+    position: absolute;
+    float: none;
+    font-size: 0px;
+    z-index: 99;
+    pointer-events: none;
+    margin: auto;
+    justify-content: center;
+    white-space: nowrap;
+}
+
+h2.Animation {
+    animation: WinnerTextAnimation 3s backwards 0s 
+}
+
+@keyframes WinnerTextAnimation {
+    0% {
+        font-size: 0px;
+    }
+
+    50% {
+        font-size: 99px;
+        text-shadow: 0 1px 0 #939113, 0 2px 0 #939113,
+        0 3px 0 #939113, 0 4px 0 #939113,
+        0 5px 0 #939113, 0 6px 0 #939113,
+        0 7px 0 #939113, 0 8px 0 #939113,
+        0 9px 0 #939113, 0 10px 0 #939113,
+        0 11px 0 #939113, 0 12px 0 #939113,
+        0 20px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    75% {
+        font-size: 99px;
+        text-shadow: 0 1px 0 #939113, 0 2px 0 #939113,
+        0 3px 0 #939113, 0 4px 0 #939113,
+        0 5px 0 #939113, 0 6px 0 #939113,
+        0 7px 0 #939113, 0 8px 0 #939113,
+        0 9px 0 #939113, 0 10px 0 #939113,
+        0 11px 0 #939113, 0 12px 0 #939113,
+        0 20px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    100% {
+        font-size: 0px;
+        text-shadow: none;
+    }
+}
+
+h2.Animation::after {
+    font-size: 99px;
+}
+
+body {
+    background-color: rgb(37, 37, 37);
+    display: grid;
+    place-items: center;
+    font-family: 'Tilt Warp', cursive;
+}
+
+h1 {
+    margin: 50px 0 50px 0;
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-family: Verdana;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+/* button {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+} */
+
+img {
+    width: 30px;
+}
+
+.btn {
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    font-size: xx-large;
+    font-weight: bold;
+    float: none;
+    user-select: none;
+    transition: width 0.5s, height 0.5s;
+    box-shadow: 5px 5px 2px 2px rgb(33, 33, 33);
+    border-radius: 15px;
+    animation: SpotSpawnAnimation 1.5s;
+    animation-timing-function: cubic-bezier(-1, 1, 1, -1);
+}
+
+@keyframes SpotSpawnAnimation {
+    0% {
+        border-radius: 0px;
+        width: 0px;
+        height: 0px;
+        transform: rotate(-10deg);
+    }
+
+    45% {
+        border-radius: 15px;
+        width: 80px;
+        height: 80px;
+        transform: rotate(5deg);
+    }
+
+    70% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.btn:hover {
+    width: 70px;
+    height: 70px;
+    background-color:#dee2a2;
+}
+
+.btn:disabled {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+.btn:disabled:hover {
+    background-color: rgb(200, 200, 200);
+}
+
+.row {
+    display: flex;
+    padding: 0px;
+    justify-content: center;
+    margin: 0px;
+}   
